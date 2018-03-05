@@ -1,11 +1,26 @@
+html,
+body,
+.grid {
+    height: 100%;
+}
+
+body {
+    padding: 100px 0;
+}
+
 .grid {
     display: grid;
     margin: 0 auto;
     max-width: 80%;
 
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 33.333%;
+    grid-gap: 32px;
 }
 
-img {
-    max-width: 100%;
+.image {
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
 }
