@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    margin: 25px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.my-form-1 {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.my-form-2 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto 1fr;
+}
+
+.my-form-3 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto 1fr auto 1fr;
+}
+
+.my-form-3 > *:nth-last-child(-n+2) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
