@@ -1,0 +1,66 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+        "header header  header"
+        "nav    content sidebar"
+        "nav    content cta"
+        "footer footer  footer";
+    grid-gap: 10px;
+}
+
+.header {
+    grid-area: header;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 500px;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.content {
+    grid-area: content;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.cta {
+    grid-area: cta;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* Following styling is pure 💅 and has nothing to do with css grid */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: #FED03B;
+    color: white;
+}
+
+.header h1 {
+    font-size: 48px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.footer {
+    padding: 16px;
+
+    background-color: #333;
+    color: white;
+
+    text-align: left;
+}
