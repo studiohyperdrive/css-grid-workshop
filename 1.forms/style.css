@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    margin: 25px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.my-form-1 {
+
+}
+
+.my-form-2 {
+
+}
+
+.my-form-3 {
+    
+}
+
+.my-form-3 > *:nth-last-child(-n+2) {
+
+}
