@@ -16,9 +16,14 @@ img {
     width: 100%;
 }
 
-.highlight {
+.highlight-square {
     grid-column: span 2;
     grid-row: span 2;
+}
+
+.highlight-rectangle {
+    grid-column: span 2;
+    grid-row: span 1;
 }
 
 /* Responsiveness */
@@ -41,7 +46,8 @@ img {
         grid-template-columns: 1fr;
     }
 
-    .highlight {
+    .highlight-square,
+    .highlight-rectangle {
         grid-column: initial;
         grid-row: initial;
     }
