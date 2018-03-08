@@ -38,6 +38,31 @@ body {
     grid-area: footer;
 }
 
+/* Responsiveness */
+@media only screen and (max-width: 1280px) {
+    body {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+            "header     header"
+            "menu       content"
+            "newsletter content"
+            "quote      quote"
+            "footer     footer";
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "menu"
+            "content"
+            "newsletter"
+            "quote"
+            "footer";
+    }
+}
 
 /* Following styling is pure 💅 and has nothing to do with css grid */
 /* General */
@@ -74,11 +99,6 @@ body {
 .content {
     padding: 2rem;
     line-height: 1.5;
-}
-
-.content span {
-    color: #E73B35;
-    text-decoration: none;
 }
 
 .content p + p {
