@@ -34,5 +34,12 @@
         <img src="https://source.unsplash.com/random/400x400?23"/>
         <img src="https://source.unsplash.com/random/400x400?24"/>
     </div>
+
+    <script>
+        if (!("grid" in document.body.style)) {
+            var fallback = '<link rel=stylesheet href="fallback.css">';
+            document.head.insertAdjacentHTML("beforeend", fallback);
+        }
+    </script>
 </body>
 </html>
