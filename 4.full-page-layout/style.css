@@ -1,12 +1,11 @@
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;;
     grid-template-areas:
         "header header  header"
-        "nav    content sidebar"
-        "nav    content cta"
+        "menu   content newsletter"
+        "menu   content quote"
         "footer footer  footer";
-    grid-gap: 10px;
 }
 
 .header {
@@ -16,50 +15,114 @@ body {
     justify-content: center;
     align-items: center;
 
-    min-height: 500px;
+    min-height: 400px;
 }
 
-.nav {
-    grid-area: nav;
+.menu {
+    grid-area: menu;
 }
 
 .content {
     grid-area: content;
 }
 
-.sidebar {
-    grid-area: sidebar;
+.newsletter {
+    grid-area: newsletter;
 }
 
-.cta {
-    grid-area: cta;
+.quote {
+    grid-area: quote;
 }
 
 .footer {
     grid-area: footer;
 }
 
-/* Following styling is pure 💅 and has nothing to do with css grid */
 
+/* Following styling is pure 💅 and has nothing to do with css grid */
+/* General */
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #21203A;
 }
 
+/* Header */
 .header {
-    background-color: #FED03B;
+    background-color: #E53D3B;
     color: white;
 }
 
 .header h1 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 100;
     text-align: center;
 }
 
-.footer {
-    padding: 16px;
+/* Menu */
+.menu {
+    background-color: #eee;
+    padding: 2rem;
+}
 
-    background-color: #333;
+.menu ul li {
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+}
+
+/* content */
+.content {
+    padding: 2rem;
+    line-height: 1.5;
+}
+
+.content span {
+    color: #E73B35;
+    text-decoration: none;
+}
+
+.content p + p {
+    margin-top: 1rem;
+}
+
+.content h2 {
+    margin-top: 2rem;
+}
+
+.content h2:nth-of-type(1) {
+    color: #F4C839;
+}
+
+.content h2:nth-of-type(2) {
+    color: #6BC6E4;
+}
+
+.content h2:nth-of-type(3) {
+    color: #E53D3B;
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: #eee;
+    padding: 2rem;
+}
+
+/* Quote */
+.quote {
+    background-color: #FED03B;
+    color: white;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer */
+.footer {
+    padding: 2rem;
+
+    background-color: #212139;
     color: white;
 
     text-align: left;
