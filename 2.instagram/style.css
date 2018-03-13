@@ -2,36 +2,53 @@ body {
     padding: 100px 0;
 }
 
-.grid {
-    margin: 0 auto;
-    max-width: 80%;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 32px;
-}
-
 img {
     width: 100%;
 }
 
+/*
+
+    TODO:
+    * display the grid in 4 columns of equal width
+    * set a gap size of 32px between all grid items
+*/
+.grid {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
 /* Responsiveness */
+/*
+    SMALL DESKTOP
+    TODO:
+    * reduce the grid to 3 columns
+    * reduce the gap size to 16px
+*/
 @media only screen and (max-width: 1280px) {
     .grid {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 16px;
+
     }
 }
 
+/*
+    TABLET
+    TODO:
+    * reduce the grid to 2 columns
+    * widen the container (80 --> 90%)
+*/
 @media only screen and (max-width: 768px) {
     .grid {
-        max-width: 90%;
-        grid-template-columns: repeat(2, 1fr);
+
     }
 }
 
+/*
+    MOBILE
+    TODO:
+    * 1 column layout
+*/
 @media only screen and (max-width: 480px) {
     .grid {
-        grid-template-columns: 1fr;
+
     }
 }
