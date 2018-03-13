@@ -7,45 +7,50 @@ section,
     width: 100%;
 }
 
+/*
+    TODO:
+    * pick a cool gradient from https://www.grabient.com/
+*/
 section {
     overflow: hidden;
-
-    /* pick a cool gradient: https://www.grabient.com/ */
-    background-image: linear-gradient(-45deg, #08AEEA 0%, #2AF598 100%);
 }
 
+/*
+    TODO:
+    * Create a grid with 16 equal rows and 9 equal columns
+    * Skew the grid -10 degrees when done placing the stripes
+*/
 .background {
-    transform: skewY(-10deg);
 
-    display: grid;
-    grid-template-rows: repeat(16, 1fr);
-    grid-template-columns: repeat(9, 1fr);
 }
 
 .stripe {
+    /* fade the bakground from white 20% opaque  */
     background: linear-gradient(-25deg, rgba(255,255,255,0) 20%, rgba(255,255,255,0.4) 80%);
 }
 
+/* Stripes */
+/*
+    TODO:
+    * add 5 random stripes
+    (tip: it looks nice when they touch either side (left/right) of the grid)
+*/
 .stripe-1 {
-    grid-column: 6/-1;
-    grid-row: 2/5;
+
 }
+
 .stripe-2 {
-    grid-column: 1/-1;
-    grid-row: 4/8;
+
 }
 
 .stripe-3 {
-    grid-column: 4/-1;
-    grid-row: 6/10;
+
 }
 
 .stripe-4 {
-    grid-column: 1/7;
-    grid-row: 11/13;
+
 }
 
 .stripe-5 {
-    grid-column: 7/-1;
-    grid-row: 15/-1;
+
 }
