@@ -1,23 +1,45 @@
+/* Form 1 */
+/*
+    TODO:
+    * display the form as a grid
+    * show all labels and inputs under eachother
+    * add 10px spacing between each grid item
+*/
 .form-1 {
-    display: grid;
-    grid-gap: 10px;
+
 }
 
+/* Form 2 */
+/*
+    TODO:
+    * display the form as a grid
+    * show all labels and inputs next to each other,
+      the width of the label column is based on the longest label
+    * add 10px spacing between each grid item
+*/
 .form-2 {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: auto 1fr;
+
 }
 
+
+/* Form 3 */
+/*
+    TODO:
+    * display the form as a grid
+    * show all labels and inputs next to each other in 2 columns,
+      the width of the label column is based on the longest label
+    * add 10px spacing between each grid item
+*/
 .form-3 {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: auto 1fr auto 1fr;
+
 }
 
+/*
+    TODO:
+    * the textarea in this grid should be full-width
+*/
 .form-3 textarea {
-    grid-column-start: 1;
-    grid-column-end: -1;
+
 }
 
 
